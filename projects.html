@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- SEO Meta Tags -->
+  <title>All Projects | Muhammad Akif Jan - Data Analyst Portfolio</title>
+  <meta name="description" content="Explore all data analytics projects by Muhammad Akif Jan. Power BI dashboards, SQL analysis, Python automation, and business intelligence case studies.">
+  <meta name="keywords" content="Data Analyst Projects, Power BI Portfolio, SQL Projects, Python Analytics, Business Intelligence, Dashboard Portfolio">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="All Projects | Muhammad Akif Jan - Data Analyst">
+  <meta property="og:description" content="Browse through data analytics projects showcasing Power BI, SQL, Python, and Excel expertise.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akifjan.github.io/portfolio/projects.html">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="All Projects | Muhammad Akif Jan">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://akifjan.github.io/portfolio/projects.html">
+  
+  <!-- Schema.org CreativeWork Collection -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Data Analyst Projects by Muhammad Akif Jan",
+    "description": "Collection of data analytics and business intelligence projects",
+    "url": "https://akifjan.github.io/portfolio/projects.html",
+    "creator": {
+      "@type": "Person",
+      "name": "Muhammad Akif Jan"
+    }
+  }
+  </script>
+  
+  <!-- Premium fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <style>
+    /* ========== SHARED STYLES (from index.html) ========== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #F5F5F0;
+      --bg-card: #FFFFFF;
+      --bg-secondary: #E6D8C3;
+      --accent: #5D866C;
+      --accent-secondary: #C2A68C;
+      --text-primary: #1F2937;
+      --text-secondary: #6B7280;
+      --border: rgba(93, 134, 108, 0.15);
+      --border-light: rgba(93, 134, 108, 0.08);
+      --shadow-xs: 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-sm: 0 4px 12px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+      --shadow-md: 0 12px 28px rgba(0,0,0,0.04), 0 0 1px rgba(0,0,0,0.04);
+      --shadow-lg: 0 24px 48px -12px rgba(0,0,0,0.06);
+      --radius-xs: 0.5rem;
+      --radius-sm: 0.75rem;
+      --radius-md: 1rem;
+      --radius-lg: 1.5rem;
+      --radius-xl: 2rem;
+      --transition-smooth: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; background-color: var(--bg-primary); }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: -0.01em;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(2.4rem, 5vw, 3.4rem);
+      font-weight: 500;
+      line-height: 1.12;
+      color: var(--text-primary);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+
+    .section-tag {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+
+    /* ========== NAVIGATION ========== */
+    .navbar {
+      position: sticky;
+      top: 1.5rem;
+      margin: 1.5rem auto 0;
+      max-width: 820px;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border);
+      border-radius: 3rem;
+      padding: 0.75rem 2.4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.7rem;
+      color: var(--text-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.4rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 450;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+      position: relative;
+      padding-bottom: 4px;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after { width: 100%; }
+
+    .nav-links a.active {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ========== BUTTONS ========== */
+    .btn {
+      padding: 0.85rem 2.2rem;
+      border-radius: 2.5rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition-smooth);
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+      background-color: var(--bg-card);
+      letter-spacing: -0.01em;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      border: 1px solid var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #4a7357;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-outline:hover {
+      background: var(--bg-card);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    /* ========== PAGE HEADER ========== */
+    .page-header {
+      padding: 4rem 0 2rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: clamp(3rem, 6vw, 4.5rem);
+      margin-bottom: 1rem;
+    }
+
+    .page-header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* ========== FILTERS ========== */
+    .filters-section {
+      padding: 0 0 3rem;
+    }
+
+    .search-bar {
+      max-width: 500px;
+      margin: 0 auto 2rem;
+      position: relative;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 1rem 1.5rem 1rem 3rem;
+      border-radius: 3rem;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      outline: none;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-xs);
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .search-bar i {
+      position: absolute;
+      left: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-secondary);
+    }
+
+    .filter-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .filter-chip {
+      padding: 0.5rem 1.3rem;
+      border-radius: 2rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .filter-chip:hover {
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .filter-chip.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    .filter-results {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    /* ========== PROJECTS GRID ========== */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2.5rem;
+      padding: 1rem 0 4rem;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-xs);
+      display: flex;
+      flex-direction: column;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(93, 134, 108, 0.2);
+    }
+
+    .project-card:hover .project-img img {
+      transform: scale(1.05);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 200px;
+      background: var(--bg-secondary);
+      overflow: hidden;
+      border-bottom: 1px solid var(--border-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .project-img .placeholder-icon {
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    .project-body {
+      padding: 2rem 2rem 2.2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-title {
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.8rem 0 1.2rem;
+    }
+
+    .project-tag {
+      background: var(--bg-secondary);
+      padding: 0.25rem 0.9rem;
+      border-radius: 2rem;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .project-desc {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      flex: 1;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border-light);
+      font-size: 0.9rem;
+    }
+
+    /* ========== ANIMATIONS ========== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4rem;
+      color: var(--text-secondary);
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      .container { padding: 0 1.8rem; }
+      .navbar { padding: 0.7rem 1.6rem; top: 1rem; }
+      .nav-links { display: none; }
+      .menu-toggle { display: block; }
+      .nav-links.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 1rem;
+        right: 1rem;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(20px);
+        padding: 2rem;
+        border-radius: 2rem;
+        gap: 1.5rem;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-md);
+      }
+      .projects-grid { grid-template-columns: 1fr; }
+      .filter-chips { gap: 0.4rem; }
+      .filter-chip { padding: 0.4rem 1rem; font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">M Akif.</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+      <div class="container">
+        <div class="section-tag">Portfolio</div>
+        <h1>All Projects</h1>
+        <p>Every data story, from exploration to insight.</p>
+      </div>
+    </section>
+
+    <!-- ========== FILTERS ========== -->
+    <section class="filters-section">
+      <div class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search projects..." aria-label="Search projects">
+        </div>
+        
+        <!-- Category Filters -->
+        <div class="filter-chips" id="categoryFilters">
+          <button class="filter-chip active" data-category="all">All</button>
+        </div>
+        
+        <!-- Technology Filters -->
+        <div class="filter-chips" id="technologyFilters">
+          <button class="filter-chip active" data-technology="all">All Tools</button>
+        </div>
+        
+        <!-- Results Count -->
+        <p class="filter-results" id="filterResults"></p>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS GRID ========== -->
+    <section>
+      <div class="container">
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Muhammad Akif Jan — Precision in data, clarity in design.</p>
+  </footer>
+
+  <script src="projects-data.js"></script>
+  <script>
+    /**
+     * ====================================================
+     * PROJECTS.JS - All Projects Page Logic
+     * ====================================================
+     */
+    
+    // --- Global State ---
+    let allProjects = [];
+    let currentCategory = 'all';
+    let currentTechnology = 'all';
+    let searchQuery = '';
+
+    // --- Mobile Menu ---
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', () => navLinks.classList.toggle('mobile-active'));
+    }
+
+    /**
+     * Load projects from JSON
+     */
+    async function loadProjects() {
+      const grid = document.getElementById('projectsGrid');
+      
+      // Show skeleton loading
+      grid.innerHTML = Array(6).fill(`
+        <div class="project-card" style="height:400px;">
+          <div class="project-img" style="background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite;"></div>
+          <div class="project-body">
+            <div style="height:24px;width:70%;background:#f0f0f0;border-radius:4px;margin-bottom:12px;"></div>
+            <div style="height:16px;width:90%;background:#f0f0f0;border-radius:4px;"></div>
+          </div>
+        </div>
+      `).join('');
+      
+      try {
+        let data = null;
+
+        try {
+          const response = await fetch('projects.json', { cache: 'no-store' });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          data = await response.json();
+        } catch (fetchError) {
+          console.warn('Falling back to embedded project data:', fetchError);
+          data = window.PROJECTS_DATA || null;
+        }
+
+        if (!data || !Array.isArray(data.projects)) {
+          throw new Error('No project data available');
+        }
+
+        allProjects = data.projects || [];
+        
+        // Sort by date (newest first)
+        allProjects.sort((a, b) => new Date(b.date) - new Date(a.date));
+        
+        // Extract unique categories and technologies
+        populateFilters();
+        
+        // Render projects
+        renderProjects();
+        
+      } catch (error) {
+        console.error('Error loading projects:', error);
+        grid.innerHTML = `
+          <div class="no-results">
+            <i class="fas fa-exclamation-circle" style="font-size:2rem;color:var(--accent);margin-bottom:1rem;display:block;"></i>
+            <p>Unable to load projects. Please check your connection.</p>
+            <button class="btn btn-outline" onclick="location.reload()" style="margin-top:1rem;">Retry</button>
+          </div>
+        `;
+      }
+    }
+
+    /**
+     * Populate filter chips dynamically
+     */
+    function populateFilters() {
+      const categories = [...new Set(allProjects.map(p => p.category))].filter(Boolean);
+      const technologies = [...new Set(allProjects.flatMap(p => p.tools || []))].filter(Boolean).sort();
+      
+      // Category filters
+      const categoryContainer = document.getElementById('categoryFilters');
+      categoryContainer.innerHTML = `
+        <button class="filter-chip active" data-category="all">All</button>
+        ${categories.map(cat => `<button class="filter-chip" data-category="${cat}">${cat}</button>`).join('')}
+      `;
+      
+      // Technology filters
+      const techContainer = document.getElementById('technologyFilters');
+      techContainer.innerHTML = `
+        <button class="filter-chip active" data-technology="all">All Tools</button>
+        ${technologies.map(tech => `<button class="filter-chip" data-technology="${tech}">${tech}</button>`).join('')}
+      `;
+      
+      // Add event listeners
+      categoryContainer.querySelectorAll('.filter-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          categoryContainer.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          currentCategory = chip.dataset.category;
+          renderProjects();
+        });
+      });
+      
+      techContainer.querySelectorAll('.filter-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          techContainer.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          currentTechnology = chip.dataset.technology;
+          renderProjects();
+        });
+      });
+    }
+
+    /**
+     * Filter and render projects
+     */
+    function renderProjects() {
+      const grid = document.getElementById('projectsGrid');
+      const resultsEl = document.getElementById('filterResults');
+      
+      let filtered = [...allProjects];
+      
+      // Apply category filter
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(p => p.category === currentCategory);
+      }
+      
+      // Apply technology filter
+      if (currentTechnology !== 'all') {
+        filtered = filtered.filter(p => (p.tools || []).includes(currentTechnology));
+      }
+      
+      // Apply search filter
+      if (searchQuery) {
+        const query = searchQuery.toLowerCase();
+        filtered = filtered.filter(p => 
+          p.title.toLowerCase().includes(query) ||
+          p.description.toLowerCase().includes(query) ||
+          p.category.toLowerCase().includes(query) ||
+          (p.tools || []).some(t => t.toLowerCase().includes(query))
+        );
+      }
+      
+      // Update results count
+      if (resultsEl) {
+        resultsEl.textContent = filtered.length === 0 
+          ? 'No projects found' 
+          : `Showing ${filtered.length} project${filtered.length !== 1 ? 's' : ''}`;
+      }
+      
+      // Render cards
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="no-results">
+            <i class="fas fa-search" style="font-size:2rem;color:var(--accent);margin-bottom:1rem;display:block;"></i>
+            <p>No projects match your filters.</p>
+            <button class="btn btn-outline" onclick="clearFilters()" style="margin-top:1rem;">Clear Filters</button>
+          </div>
+        `;
+        return;
+      }
+      
+      grid.innerHTML = filtered.map((project, index) => `
+        <div class="project-card" style="animation-delay: ${index * 0.1}s;">
+          <div class="project-img">
+            ${project.heroImage 
+              ? `<img src="${project.heroImage}" alt="${project.title}" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\\'fas fa-chart-bar placeholder-icon\\'></i>';">`
+              : '<i class="fas fa-chart-bar placeholder-icon"></i>'
+            }
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">${project.title}</h3>
+            <div class="project-meta">
+              <span class="project-tag">${project.category || 'Project'}</span>
+              ${(project.tools || []).slice(0, 3).map(tool => `<span class="project-tag">${tool}</span>`).join('')}
+            </div>
+            <p class="project-desc">${project.shortDescription || project.description || ''}</p>
+            <div class="btn-group" style="display:flex;gap:0.8rem;flex-wrap:wrap;margin-top:auto;">
+              <a href="project.html?id=${project.id}" class="btn btn-outline">View Case Study <i class="fas fa-arrow-right"></i></a>
+              ${project.github && project.github !== '#' ? `<a href="${project.github}" class="btn btn-outline" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>` : ''}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    /**
+     * Clear all filters
+     */
+    function clearFilters() {
+      currentCategory = 'all';
+      currentTechnology = 'all';
+      searchQuery = '';
+      document.getElementById('searchInput').value = '';
+      
+      document.querySelectorAll('#categoryFilters .filter-chip').forEach((c, i) => {
+        c.classList.toggle('active', i === 0);
+      });
+      document.querySelectorAll('#technologyFilters .filter-chip').forEach((c, i) => {
+        c.classList.toggle('active', i === 0);
+      });
+      
+      renderProjects();
+    }
+
+    /**
+     * Search input handler (debounced)
+     */
+    let debounceTimer;
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        searchQuery = e.target.value;
+        renderProjects();
+      }, 300);
+    });
+
+    // --- Load projects on page load ---
+    document.addEventListener('DOMContentLoaded', loadProjects);
+  </script>
+</body>
+</html>

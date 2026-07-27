@@ -1,0 +1,92 @@
+{
+  "projects": [
+    {
+      "id": "brazilian-ecommerce",
+      "title": "Brazilian E-commerce Analytics Dashboard",
+      "category": "Business Intelligence",
+      "description": "Executive Power BI dashboard using the Brazilian Olist E-commerce dataset with multi-table relational model.",
+      "shortDescription": "Built an executive Power BI dashboard using the Brazilian Olist E-commerce dataset.",
+      "heroImage": "brazil1.png",
+      "gallery": [
+        "brazil2.png",
+        "brazil3.png"
+      ],
+      "tools": ["Power BI", "SQL", "DAX", "Excel"],
+      "businessProblem": "Olist, a Brazilian e-commerce platform, needed comprehensive visibility into customer behavior, sales performance, and product analytics across multiple business dimensions to drive strategic decisions.",
+      "objective": "Build an executive-level interactive dashboard that provides real-time insights into sales trends, customer segmentation, product performance, and regional analysis.",
+      "dataset": "Brazilian Olist E-commerce Public Dataset containing 100k+ orders, customer data, product catalog, seller information, and geolocation data across Brazil.",
+      "dataModeling": "Designed a star schema with fact orders table connected to dimension tables for customers, products, sellers, and time intelligence.",
+      "kpis": [
+        "Total Revenue: R$16M",
+        "Average Order Value: R$160",
+        "Customer Satisfaction: 4.2/5",
+        "Order Delivery Time: 12 days avg",
+        "Repeat Purchase Rate: 15%"
+      ],
+      "insights": [
+        "Top 3 product categories contribute to 60% of total revenue",
+        "São Paulo region accounts for 42% of all orders",
+        "Weekend orders have 25% higher average value than weekday orders",
+        "Free shipping increases conversion rate by 35%",
+        "Seller concentration: Top 5% sellers generate 40% of revenue"
+      ],
+      "recommendations": [
+        "Increase marketing budget in high-performing categories during weekends",
+        "Expand seller onboarding in underperforming regions",
+        "Implement loyalty program to improve repeat purchase rate",
+        "Optimize delivery logistics in Northeast region",
+        "Consider free shipping threshold to boost average order value"
+      ],
+      "challenges": "Data cleaning required handling missing geolocation data and inconsistent product categorization. Performance optimization needed for real-time filtering across 100k+ records.",
+      "outcome": "Delivered a production-ready dashboard adopted by the executive team, reducing monthly reporting time by 70% and enabling data-driven decision making.",
+      "github": "https://github.com/akifjan/brazilian-ecommerce",
+      "download": "#",
+      "date": "2025-06-15",
+      "featured": true
+    },
+    {
+  "id": "Employee Attrition & HR Analytics Dashboard",
+  "title": "Employee Attrition & HR Analytics Dashboard",
+  "category": "Human Resources Analytics",
+  "description": "Interactive Power BI dashboard analyzing employee attrition, workforce demographics, and key retention factors using the IBM HR Analytics dataset.",
+  "shortDescription": "Built a two-page HR Analytics dashboard to identify employee turnover trends and retention insights.",
+  "heroImage": "hr1.png",
+  "gallery": [
+    "hr2.png",
+    "hr1.png"
+  ],
+  "tools": ["Power BI", "Power Query", "DAX", "Excel"],
+  "businessProblem": "Employee turnover is one of the biggest challenges for organizations, leading to increased recruitment costs, productivity loss, and reduced employee morale. HR managers require a centralized reporting solution to identify the factors influencing employee attrition and improve workforce retention.",
+  "objective": "Develop an interactive HR Analytics dashboard that enables decision-makers to monitor employee attrition, analyze workforce demographics, identify high-risk employee groups, and understand the key drivers behind employee turnover.",
+  "dataset": "IBM HR Analytics Employee Attrition & Performance Dataset containing employee demographics, job roles, salaries, performance metrics, work-life balance, overtime, promotions, and attrition information.",
+  "dataModeling": "Imported and transformed HR data using Power Query, created calculated measures with DAX, and designed an interactive data model supporting cross-filtering and drill-down analysis across multiple HR dimensions.",
+  "kpis": [
+    "Total Employees",
+    "Employees Left",
+    "Attrition Rate (%)",
+    "Average Monthly Income",
+    "Average Job Satisfaction"
+  ],
+  "insights": [
+    "Research & Development department recorded the highest number of employee exits.",
+    "Employees working overtime showed a noticeably higher attrition rate.",
+    "Most resignations occurred among employees with fewer years at the company.",
+    "Lower job satisfaction and poor work-life balance were associated with higher employee turnover.",
+    "Sales Executives and Laboratory Technicians experienced relatively high attrition compared to other job roles."
+  ],
+  "recommendations": [
+    "Reduce excessive overtime through improved workforce planning.",
+    "Strengthen employee engagement and satisfaction programs.",
+    "Review promotion and career development opportunities for long-term employees.",
+    "Provide targeted retention strategies for high-risk departments and job roles.",
+    "Monitor HR KPIs regularly using interactive dashboards to support proactive decision-making."
+  ],
+  "challenges": "Designed a dashboard that clearly communicates workforce trends while balancing multiple HR metrics across two report pages. Created DAX measures and interactive visuals to present meaningful business insights without overwhelming end users.",
+  "outcome": "Delivered a professional two-page HR Analytics dashboard that transforms raw employee data into actionable insights through interactive KPIs, trend analysis, and executive-level reporting.",
+  "github": "https://github.com/yourusername/employee-attrition-dashboard",
+  "download": "#",
+  "date": "2026-07-27",
+  "featured": true
+}
+  ]
+}
