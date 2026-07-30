@@ -87,6 +87,57 @@
   "download": "#",
   "date": "2026-07-27",
   "featured": true
+},
+{
+  "id": "global-superstore-dashboard",
+  "title": "Global Superstore Sales Analytics Dashboard",
+  "category": "Business Intelligence",
+  "description": "Executive Power BI dashboard analyzing global sales performance, profitability, customer behavior, and shipping operations using the Global Superstore dataset.",
+  "shortDescription": "Built an executive Power BI dashboard providing sales, profit, customer, and shipping insights.",
+  "heroImage": "superstore1.png",
+  "gallery": [
+    "superstore2.png",
+    "superstore3.png"
+  ],
+  "tools": [
+    "Power BI",
+    "Power Query",
+    "DAX",
+    "Excel"
+  ],
+  "businessProblem": "A global retail company required a centralized reporting solution to monitor sales, profitability, customer behavior, and shipping performance across multiple regions. Existing reports made it difficult to identify trends and support strategic business decisions.",
+  "objective": "Develop an executive-level interactive Power BI dashboard that enables business leaders to monitor KPIs, analyze regional performance, evaluate customer segments, and identify profitable products through interactive visualizations.",
+  "dataset": "Global Superstore Dataset containing over 50,000 sales transactions, customer information, product categories, regional sales, shipping details, order priorities, discounts, and profitability metrics.",
+  "dataModeling": "Cleaned and transformed data using Power Query, created DAX measures and calculated columns, and developed an optimized data model supporting interactive analysis across sales, customers, products, and shipping operations.",
+  "kpis": [
+    "Total Sales",
+    "Total Profit",
+    "Total Orders",
+    "Total Customers",
+    "Profit Margin (%)",
+    "Average Order Value"
+  ],
+  "insights": [
+    "Technology generated the highest sales and overall profit.",
+    "Consumer segment contributed the largest share of total revenue.",
+    "North America achieved the highest overall sales performance.",
+    "Standard Class was the most frequently used shipping mode.",
+    "Top-performing products generated a significant portion of total revenue."
+  ],
+  "recommendations": [
+    "Increase investment in high-performing Technology products.",
+    "Focus marketing campaigns on high-value customer segments.",
+    "Optimize shipping operations to reduce delivery costs.",
+    "Review discount strategies for low-profit products.",
+    "Expand business initiatives in underperforming regions."
+  ],
+  "challenges": "Optimized report performance while analyzing over 50,000 records, created reusable DAX measures, and designed an executive-friendly dashboard with intuitive navigation and interactive filtering.",
+  "outcome": "Delivered a professional Power BI dashboard enabling stakeholders to monitor business performance, identify sales opportunities, and make faster data-driven decisions through interactive reporting.",
+  "github": "#",
+  "download": "#",
+  "date": "2026-07-31",
+  "featured": true
 }
-  ]
+  ]  ]
+}
 }
