@@ -39,7 +39,6 @@
       ],
       "challenges": "Data cleaning required handling missing geolocation data and inconsistent product categorization. Performance optimization needed for real-time filtering across 100k+ records.",
       "outcome": "Delivered a production-ready dashboard adopted by the executive team, reducing monthly reporting time by 70% and enabling data-driven decision making.",
-      "github": "https://github.com/akifjan/brazilian-ecommerce",
       "download": "#",
       "date": "2025-06-15",
       "featured": true
@@ -83,7 +82,6 @@
       ],
       "challenges": "Designed a dashboard that clearly communicates workforce trends while balancing multiple HR metrics across two report pages. Created DAX measures and interactive visuals to present meaningful business insights without overwhelming end users.",
       "outcome": "Delivered a professional two-page HR Analytics dashboard that transforms raw employee data into actionable insights through interactive KPIs, trend analysis, and executive-level reporting.",
-      "github": "https://github.com/yourusername/employee-attrition-dashboard",
       "download": "#",
       "date": "2026-07-27",
       "featured": true
