@@ -96,8 +96,7 @@
   "shortDescription": "Built an executive Power BI dashboard providing sales, profit, customer, and shipping insights.",
   "heroImage": "superstore1.png",
   "gallery": [
-    "superstore2.png",
-    "superstore3.png"
+    
   ],
   "tools": [
     "Power BI",
